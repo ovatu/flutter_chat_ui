@@ -89,6 +89,7 @@ class DefaultMessageText extends StatelessWidget {
           ? messageOptions.parsePatterns!
           : defaultPersePatterns,
       text: text,
+      alignment: isOwnMessage ? TextAlign.end : TextAlign.start,
       style: TextStyle(
         color: isOwnMessage
             ? messageOptions.currentUserTextColor(context)
