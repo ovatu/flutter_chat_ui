@@ -66,6 +66,7 @@ class MessageListState extends State<MessageList> {
             children: <Widget>[
               Expanded(
                 child: ListView.builder(
+                  shrinkWrap: widget.messageListOptions.shrinkWrap,
                   physics: widget.messageListOptions.scrollPhysics,
                   padding: widget.readOnly ? null : EdgeInsets.zero,
                   controller: scrollController,
