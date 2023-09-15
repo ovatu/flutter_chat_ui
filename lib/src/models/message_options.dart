@@ -31,6 +31,7 @@ class MessageOptions {
     this.timeFormat,
     this.messageTimeBuilder,
     this.messageMediaBuilder,
+    this.messageMediaItemBuilder,
     this.borderRadius = 18.0,
     Color? currentUserTimeTextColor,
     this.marginDifferentAuthor = const EdgeInsets.only(top: 15),
@@ -153,6 +154,9 @@ class MessageOptions {
   /// Builder to create your own media container widget
   final Widget Function(ChatMessage message, ChatMessage? previousMessage,
       ChatMessage? nextMessage)? messageMediaBuilder;
+
+  /// Builder to create your own media container widget
+  final Widget Function(ChatMessage message, ChatMedia media)? messageMediaItemBuilder;
 
   /// Builder to create your own time widget
   /// (shown under the text when [showTime] is true)

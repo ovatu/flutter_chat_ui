@@ -25,6 +25,10 @@ class MediaContainer extends StatelessWidget {
     double? height,
     double? width,
   ) {
+    if (messageOptions.messageMediaItemBuilder != null) {
+      return messageOptions.messageMediaItemBuilder!(message, media);
+    }
+
     final Widget loading = Container(
       width: 15,
       height: 15,
