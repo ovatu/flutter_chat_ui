@@ -1,4 +1,4 @@
-part of dash_chat_2;
+part of '../../../dash_chat_2.dart';
 
 /// @nodoc
 class MediaContainer extends StatelessWidget {
@@ -40,7 +40,7 @@ class MediaContainer extends StatelessWidget {
         return Stack(
           alignment: AlignmentDirectional.bottomEnd,
           children: <Widget>[
-            VideoPlayer(url: media.url, key: GlobalKey()),
+            VideoPlayer(url: media.url, key: Key(media.url)),
             if (media.isUploading) loading
           ],
         );

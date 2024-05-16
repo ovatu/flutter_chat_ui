@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Dash Chat Demo',
       theme: ThemeData(
-        primarySwatch: Colors.teal,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.tealAccent),
       ),
       home: MyHomePage(),
     );
@@ -72,7 +72,7 @@ class MyHomePageState extends State<MyHomePage> {
             ),
             ElevatedButton(
               onPressed: () => push(ThemeSample()),
-              child: const Text('Themeing'),
+              child: const Text('Theming'),
             ),
           ],
         ),

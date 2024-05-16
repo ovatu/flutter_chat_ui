@@ -86,6 +86,13 @@ List<ChatMessage> basicSample = <ChatMessage>[
     createdAt: DateTime(2021, 01, 30, 16, 34),
   ),
   ChatMessage(
+    isMarkdown: true,
+    text:
+        "```dart\nvoid main() {\n  print('Hello World');\n}\n```\nThe above code will print \"Hello World\" to the console when run.\n\nHere's a breakdown of the code:\n\n* The `main()` function is the entry point of the program. It's where execution begins.\n* `print('Hello World')` prints \"Hello World\" to the console. The `print()` function is a built-in function in Dart that outputs data to the console.\n\nYou can run this code by creating a new Dart file (e.g., `hello_world.dart`) and pasting the code into it. Then, open a terminal window, navigate to the directory where the file is saved, and run the following command:\n\n```\ndart hello_world.dart\n```\n\nThis will compile and run the Dart program, and you should see \"Hello World\" printed to the console. Know more: www.google.com ",
+    user: user2,
+    createdAt: DateTime(2021, 01, 30, 15, 50),
+  ),
+  ChatMessage(
     text: 'Hey!',
     user: user,
     createdAt: DateTime(2021, 01, 30, 15, 50),
@@ -117,6 +124,13 @@ List<ChatMessage> media = <ChatMessage>[
             'https://firebasestorage.googleapis.com/v0/b/molteo-40978.appspot.com/o/memes%2F155512641_3864499247004975_4028017188079714246_n.jpg?alt=media&token=0b335455-93ed-4529-9055-9a2c741e0189',
         type: MediaType.image,
         fileName: 'image.png',
+      ),
+      ChatMedia(
+        url:
+            'https://firebasestorage.googleapis.com/v0/b/molteo-40978.appspot.com/o/chat_medias%2F2GFlPkj94hKCqonpEdf1%2F20210526_162318.mp4?alt=media&token=01b814b9-d93a-4bf1-8be1-cf9a49058f97',
+        type: MediaType.video,
+        fileName: 'video.mp4',
+        isUploading: false,
       ),
       ChatMedia(
         url:

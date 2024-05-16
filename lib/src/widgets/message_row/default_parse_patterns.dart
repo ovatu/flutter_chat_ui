@@ -1,7 +1,20 @@
-part of dash_chat_2;
+part of '../../../dash_chat_2.dart';
+
+@Deprecated('Use defaultParsePatterns instead')
+List<MatchText> defaultPersePatterns = defaultParsePatterns;
 
 /// {@category Default widgets}
-List<MatchText> defaultPersePatterns = <MatchText>[
+List<MatchText> defaultParsePatterns = <MatchText>[
+  MatchText(
+    type: ParsedType.EMAIL,
+    style: const TextStyle(
+      decoration: TextDecoration.underline,
+    ),
+    onTap: (String email) {
+      String url = 'mailto:$email';
+      openLink(url);
+    },
+  ),
   MatchText(
     type: ParsedType.URL,
     style: const TextStyle(
@@ -11,7 +24,18 @@ List<MatchText> defaultPersePatterns = <MatchText>[
       if (!url.startsWith('http://') && !url.startsWith('https://')) {
         url = 'http://$url';
       }
-      launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+      openLink(url);
+    },
+  ),
+  MatchText(
+    pattern: r'(\+|00|0)?[1-9][0-9 \-\(\)\.]{5,32}[0-9](?!\w)',
+    type: ParsedType.CUSTOM,
+    style: const TextStyle(
+      decoration: TextDecoration.underline,
+    ),
+    onTap: (String phone) {
+      String url = 'tel:$phone';
+      openLink(url);
     },
   ),
 ];

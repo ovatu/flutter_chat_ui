@@ -46,7 +46,7 @@
       "login": "kaedeee",
       "name": "Kaede Games",
       "avatar_url": "https://avatars.githubusercontent.com/u/55743370?v=4",
-      "profile": "http://games.kaedeee.com",
+      "profile": "https://github.com/kaedeee",
       "contributions": [
         "code"
       ]
@@ -68,6 +68,33 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "funjay",
+      "name": "lawrence",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66911451?v=4",
+      "profile": "https://github.com/funjay",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "alamin-karno",
+      "name": "Md. Al-Amin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56608168?v=4",
+      "profile": "https://github.com/alamin-karno",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "T-P-F",
+      "name": "TPF",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61667947?v=4",
+      "profile": "https://github.com/T-P-F",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -76,5 +103,6 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true,
-  "commitConvention": "angular"
+  "commitConvention": "angular",
+  "commitType": "docs"
 }

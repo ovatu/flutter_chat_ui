@@ -1,3 +1,15 @@
+## [0.0.20] - 01/02/2024
+
+* Markdown support
+* Fixed issue with mentions, see [#67](https://github.com/SebastienBtr/Dash-Chat-2/issues/67)
+* Fixed issue with videos, see [#70](https://github.com/SebastienBtr/Dash-Chat-2/issues/70)
+* Overall maintenance and minor code improvements
+
+## [0.0.19] - 23/10/2023
+
+* More parse pattern by default
+* Fixed typo for defaultParsePatterns variable
+
 ## [0.0.18] - 22/08/2023
 
 * Allowed customProperties to be null
